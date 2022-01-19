@@ -283,8 +283,10 @@ header .primary_menu .wrapper{
   padding: 15px 8px;
   margin: 0 18px;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
 }
+
+.main_menu li a:hover{ color: #a4c639;}
 
 .active_menu{
   border-bottom: 2px solid #a4c639;
@@ -417,5 +419,106 @@ header .primary_menu .wrapper{
 }
 
 /* main section end */
+
+/* financial service section start */
+.fin_service_section{ padding: 80px 0; position: relative; }
+
+.fin_service_section h2{
+  margin-top: 60px;
+  color: #1e1e1e;
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.fin_service_section h2 span{ color: #a4c639; }
+
+.fin_service_section .subtext{
+  padding: 20px 0;
+  color: #707070;
+  font-size: 15px;
+  text-align: center;
+}
+
+.fin_service_list{
+  margin: 70px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fin_service_list li{
+  width: 31.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+.service_content_box{ padding: 32px; }
+.fin_service_list li .service_panel:hover{ transform: scale(.98); }
+
+.service_content_box h3{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.service_content_box p{
+  padding: 20px 0;
+  color: #666666;
+  line-height: 30px;
+}
+
+.read_more_btn{
+  padding: 14px 28px;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  color: #fff;
+  background: #a4c639;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.read_more_btn:hover{
+  border: 2px solid #a4c639;
+  background: #fff;
+  color: #a4c639;
+}
+
+.digital_overlay, .market_overlay, .historical_overlay{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: rgba(0, 0, 0, .5);
+  font-size: 0;
+  transform: translate(-50%,-50%);
+}
+
+.digital_modal, .market_modal, .historical_modal{
+  padding: 40px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  background: #fff;
+  line-height: 30px;
+  transform: translate(-50%,-50%);
+}
+
+.digital_modal h3, .market_modal h3, .historical_modal h3{
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.hide{ display: none; }
+
+/* financial service section end */
 
 /* --------------------- index page end ---------------- */
