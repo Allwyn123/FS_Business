@@ -614,4 +614,60 @@ header .primary_menu .wrapper{
 }
 /* our solution section end */
 
+/* more info section start */
+.info_section{ margin: 180px 0; }
+
+.info_section .wrapper{
+  display: flex;
+  background: #f5f5f5;
+}
+
+.info_section figure img{
+  height: 100%;
+  flex-basis: 50%;
+}
+
+.info_content_box{ 
+  flex-basis: 46%;
+  padding: 50px;
+}
+
+.info_content_box .suptext{ 
+  color: #666666;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.info_content_box h4{
+  color: #1e1e1e;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.info_content_box h4 span{ color: #a4c639; }
+
+.info_content{
+  margin-top: 40px;
+  color: #666666;
+  line-height: 30px;
+}
+
+.info_content_box a[title="Read More"]{
+  padding: 13px 28px;
+  margin-top: 40px;
+  border: 2px solid #a4c639;
+  border-radius: 40px;
+  color: #fff;
+  background: #a4c639;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.info_content_box a[title="Read More"]:hover{
+  border: 2px solid #a4c639;
+  background: #fff;
+  color: #a4c639;
+}
+/* more info section end */
+
 /* --------------------- index page end ---------------- */
