@@ -293,4 +293,90 @@ header .primary_menu .wrapper{
 /* primary menu end */
 /* header end */
 
+/* main section start */
+.prev{
+  font-size: 0;
+  position: absolute;
+  top: 60%;
+  left: 63px;
+  z-index: 2;
+  color: #fff;
+}
+
+.prev::after{
+  content: "\f104";
+  font-size: 38px;
+  font-family: 'localFontAwesome';
+}
+
+.next{
+  position: absolute;
+  top: 60%;
+  right: 63px;
+  z-index: 2;
+  color: #fff;
+  font-size: 0;
+}
+
+.next::after{
+  content: "\f105";
+  font-size: 38px;
+  font-family: 'localFontAwesome';
+}
+
+.main_slider .bg_img img{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.main_content{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main_content .sup_title{
+  color: #a4c639;
+  margin-bottom: 20px;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.main_content h2{
+  width: 50%;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.main_content .main_para{
+  width: 60%;
+  margin: 34px 0;
+  color: #fff;
+  line-height: 30px;
+}
+
+.main_content a[title="Learn More"]{
+  padding: 15px 30px;
+  width: fit-content;
+  border: 2px solid #a4c639;
+  border-radius: 40px;
+  color: #fff;
+  background: #a4c639;
+  font-size: 13px;
+  font-weight: 900;
+}
+.main_content a[title="Learn More"]:hover{
+  border: 2px solid #a4c639;
+  color: #a4c639;
+  background: transparent;
+}
+/* main section end */
+
 /* --------------------- index page end ---------------- */
