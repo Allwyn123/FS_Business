@@ -295,12 +295,12 @@ header .primary_menu .wrapper{
 
 /* main section start */
 .prev{
-  font-size: 0;
   position: absolute;
   top: 60%;
   left: 63px;
   z-index: 2;
   color: #fff;
+  font-size: 0;
 }
 
 .prev::after{
@@ -372,11 +372,50 @@ header .primary_menu .wrapper{
   font-size: 13px;
   font-weight: 900;
 }
+
 .main_content a[title="Learn More"]:hover{
   border: 2px solid #a4c639;
   color: #a4c639;
   background: transparent;
 }
+
+.main_bottom_content{ background: #a4c639; }
+
+.main_bottom_content .wrapper{
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 35px;
+}
+
+.main_bottom_content .wrapper p:first-child{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.main_bottom_content .wrapper p:last-child{
+  color: #fff;
+  font-size: 16px;
+}
+
+.main_bottom_content a[title="Contact Us"]{
+  padding: 14px 30px;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  color: #fff;
+  background: #a4c639;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: initial;
+}
+
+.main_bottom_content a[title="Contact Us"]:hover{
+  background: #fff;
+  color: #a4c639;
+}
+
 /* main section end */
 
 /* --------------------- index page end ---------------- */
