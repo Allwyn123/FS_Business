@@ -198,6 +198,11 @@ li {
 /************************ MAIN CODE START *************************/
 /*================================================================*/
 
+@font-face {
+  font-family: "localFontAwesome";
+  src: url("../vendor/fonts/FontAwesome.otf") format("truetype");
+}
+
 /* --------------------- index page start ---------------- */
 .wrapper{
   max-width: 1440px;
@@ -231,7 +236,7 @@ header .secondary_menu .wrapper{
   content: '\f017';
   padding-right: 10px;
   font-size: 18px;
-  font-family: "fontAwesome";
+  font-family: "localFontAwesome";
   font-weight: 500;
 }
 
@@ -239,7 +244,7 @@ header .secondary_menu .wrapper{
   content: '\f095';
   padding-right: 10px;
   font-size: 18px;
-  font-family: "fontAwesome";
+  font-family: "localFontAwesome";
   font-weight: 500;
 }
 
@@ -251,7 +256,7 @@ header .secondary_menu .wrapper{
   border-left: 1px solid rgba(255, 255, 255, .4);
   color: #fff;
   font-size: 16px;
-  font-family: "fontAwesome";
+  font-family: "localFontAwesome";
 }
 
 .social_medias_menu li:nth-child(1) a::after{ content: '\f09a'; }
