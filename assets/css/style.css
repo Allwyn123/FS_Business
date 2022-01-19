@@ -283,8 +283,10 @@ header .primary_menu .wrapper{
   padding: 15px 8px;
   margin: 0 18px;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
 }
+
+.main_menu li a:hover{ color: #a4c639;}
 
 .active_menu{
   border-bottom: 2px solid #a4c639;
