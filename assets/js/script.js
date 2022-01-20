@@ -63,9 +63,7 @@ if(page_check.className == "container home_page"){
     var goto_top = document.querySelector(".goto_top");
 
     window.addEventListener('scroll', function(){
-        // console.log(window.scrollY);
         if(window.scrollY > 600){
-            // console.log("hi");
             goto_top.classList.add("display");
         }
         else{
@@ -106,6 +104,102 @@ if(page_check.className == "container home_page"){
         }
     }
     // ***************** our solution section counting event end *****************
+
+    // ***************************** contact us form start *****************************
+
+    var name_box = document.querySelector(".name_box");
+    var name_error_display = document.querySelector(".name_error_display");
+    var email_box = document.querySelector(".email_box");
+    var email_error_display = document.querySelector(".email_error_display");
+    var subject_box = document.querySelector(".subject_box");
+    var subject_error_display = document.querySelector(".subject_error_display");
+    var message_box = document.querySelector(".message_box");
+    var message_error_display = document.querySelector(".message_error_display");
+    var contactus_send_btn = document.querySelector(".contactus_section .send_btn");
+    var submit_error_display = document.querySelector(".submit_error_display");
+
+    var namePattern = /^[a-zA-Z]+$/;
+    var emailPattern = /.+\@.+\..+/;
+    var error = false;
+
+    function check(e){
+        var res = namePattern.test(e.value);
+        var display = e.nextSibling.nextSibling;
+        if(res == false){
+            e.classList.add("error_box");
+            var errMessage = "Numbers & Special Characters are invalid";
+            display.innerHTML = errMessage;
+            display.classList.add("display");
+            error = true;
+        }
+        else if(res == true){
+            e.classList.remove("error_box");
+            display.classList.remove("display");
+        }
+    }
+
+    contactus_send_btn.addEventListener('click', function(){
+    error = false;
+    if(name_box.value == ""){
+        name_error_display.innerHTML = "Enter Your Name";
+        name_error_display.classList.add("display");
+        name_box.classList.add("error_box");
+        error = true;
+    }
+    else{
+        check(name_box);
+    }
+    
+    if(email_box.value == "" || emailPattern.test(email_box.value) == false){
+        email_error_display.innerHTML = "Enter Your Email";
+        email_error_display.classList.add("display");
+        email_box.classList.add("error_box");
+        error = true;
+    }
+    else{
+        email_error_display.classList.remove("display");
+        email_box.classList.remove("error_box");
+    }
+
+    if(subject_box.value == ""){
+        subject_error_display.innerHTML = "Please Enter Subject";
+        subject_error_display.classList.add("display");
+        subject_box.classList.add("error_box");
+        error = true;
+    }
+    else{
+        subject_error_display.classList.remove("display");
+        subject_box.classList.remove("error_box");
+    }
+
+    if(message_box.value == ""){
+        message_error_display.innerHTML = "Enter Your Message";
+        message_error_display.classList.add("display");
+        message_box.classList.add("error_box");
+        error = true;
+    }
+    else{
+        message_error_display.classList.remove("display");
+        message_box.classList.remove("error_box");
+    }
+
+    if(error == false){
+        submit_error_display.innerHTML = "Successfully Submited";
+        submit_error_display.classList.add("display");
+        submit_error_display.classList.add("success_box");
+        name_box.value = "";
+        email_box.value = "";
+        subject_box.value = "";
+        message_box.value = "";
+    }
+    else{
+        submit_error_display.innerHTML = "";
+        submit_error_display.classList.remove("success_box");
+    }
+    });
+
+    // ***************************** contact us form end *****************************
+
 }
 
 // ============================================================================
