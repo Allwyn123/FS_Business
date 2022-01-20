@@ -480,7 +480,7 @@ header .primary_menu .wrapper{
 
 .service_content_box p{
   padding: 20px 0;
-  color: #666666;
+  color: #666;
   line-height: 30px;
 }
 
@@ -500,12 +500,13 @@ header .primary_menu .wrapper{
   color: #a4c639;
 }
 
-.digital_overlay, .market_overlay, .historical_overlay{
+.overlay{
   width: 100%;
-  height: 100vh;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 3;
   background: rgba(0, 0, 0, .5);
   font-size: 0;
   transform: translate(-50%,-50%);
@@ -518,10 +519,10 @@ header .primary_menu .wrapper{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 3;
+  z-index: 4;
   background: #fff;
   line-height: 30px;
   transform: translate(-50%,-50%);
