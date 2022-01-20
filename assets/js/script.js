@@ -200,6 +200,99 @@ if(page_check.className == "container home_page"){
 
     // ***************************** contact us form end *****************************
 
+    // *************************** footer contact us start ***************************
+
+    var name_input = document.querySelector(".name_input");
+    var name_error_box = document.querySelector(".name_error_box");
+    var email_input = document.querySelector(".email_input");
+    var email_error_box = document.querySelector(".email_error_box");
+    var message_input = document.querySelector(".message_input");
+    var message_error_box = document.querySelector(".message_error_box");
+    var footer_contactus_send_btn = document.querySelector(".footer_contactus .send_btn");
+    var submit_error_box = document.querySelector(".submit_error_box");
+
+    var namePattern = /^[a-zA-Z]+$/;
+    var emailPattern = /.+\@.+\..+/;
+    var error = false;
+
+    function check(e){
+        var res = namePattern.test(e.value);
+        var display = e.nextSibling.nextSibling;
+        if(res == false){
+            e.classList.add("error_box");
+            var errMessage = "Numbers & Special Characters are invalid";
+            display.innerHTML = errMessage;
+            display.classList.add("display");
+            error = true;
+        }
+        else if(res == true){
+            e.classList.remove("error_box");
+            display.classList.remove("display");
+        }
+    }
+
+    footer_contactus_send_btn.addEventListener('click', function(){
+        error = false;
+        if(name_input.value == ""){
+            name_error_box.innerHTML = "Enter Your Name";
+            name_error_box.classList.add("display");
+            name_input.classList.add("error_box");
+            error = true;
+        }
+        else{
+            check(name_input);
+        }
+        
+        if(email_input.value == "" || emailPattern.test(email_input.value) == false){
+            email_error_box.innerHTML = "Enter Your Email";
+            email_error_box.classList.add("display");
+            email_input.classList.add("error_box");
+            error = true;
+        }
+        else{
+            email_error_box.classList.remove("display");
+            email_input.classList.remove("error_box");
+        }
+
+        // if(subject_box.value == ""){
+        //     subject_error_display.innerHTML = "Please Enter Subject";
+        //     subject_error_display.classList.add("display");
+        //     subject_box.classList.add("error_box");
+        //     error = true;
+        // }
+        // else{
+        //     subject_error_display.classList.remove("display");
+        //     subject_box.classList.remove("error_box");
+        // }
+
+        if(message_input.value == ""){
+            message_error_box.innerHTML = "Enter Your Message";
+            message_error_box.classList.add("display");
+            message_input.classList.add("error_box");
+            error = true;
+        }
+        else{
+            message_error_box.classList.remove("display");
+            message_input.classList.remove("error_box");
+        }
+
+        if(error == false){
+            submit_error_box.innerHTML = "Successfully Submited";
+            submit_error_box.classList.add("display");
+            submit_error_box.classList.add("success_box");
+            name_input.value = "";
+            email_input.value = "";
+            subject_box.value = "";
+            message_input.value = "";
+        }
+        else{
+            submit_error_box.innerHTML = "";
+            submit_error_box.classList.remove("success_box");
+        }
+    });
+
+    // ************************ footer contact us end ************************
+
 }
 
 // ============================================================================
