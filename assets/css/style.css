@@ -530,7 +530,7 @@ header .primary_menu .wrapper{
   align-items: center;
   justify-content: center;
   position: fixed;
-  z-index: 4;
+  z-index: 11;
   top: 50%;
   left: 50%;
   background: #fff;
@@ -823,7 +823,6 @@ header .primary_menu .wrapper{
   border: none;
   border-radius: 20px;
   font-size: 13px;
-  flex-basis: 50%;
 }
 
 .contactus_section .message_box{
@@ -857,6 +856,13 @@ header .primary_menu .wrapper{
   border: 2px solid #a4c639;
   background: #fff;
   color: #a4c639;
+}
+
+.error_box{ border: 1px solid #f00 !important; }
+
+.success_box{ 
+  color: #fff !important; 
+  font-weight: 900 !important;
 }
 /* contact us section end */
 
