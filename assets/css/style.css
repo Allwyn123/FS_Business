@@ -205,7 +205,6 @@ li {
 }
 
 .hide{ display: none !important; }
-
 .display{ display: block !important; }
 
 /* common */
@@ -309,6 +308,14 @@ header .primary_menu .wrapper{
 .active_menu{
   border-bottom: 2px solid #a4c639 !important;
   color: #a4c639 !important;
+}
+
+.fixed_menu{
+  position: fixed !important;
+  top: 0 !important;
+  background: #232323 !important;
+  z-index: 10 !important;
+  border-bottom: 1px solid #444 !important;
 }
 /* primary menu end */
 /* header end */
