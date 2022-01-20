@@ -58,6 +58,21 @@ if(page_check.className == "container home_page"){
     });
 
     // ------------ modal end ------------ 
+
+    // ------------ goto top start ------------ 
+    var goto_top = document.querySelector(".goto_top");
+
+    window.addEventListener('scroll', function(){
+        // console.log(window.scrollY);
+        if(window.scrollY > 600){
+            // console.log("hi");
+            goto_top.classList.add("display");
+        }
+        else{
+            goto_top.classList.remove("display");
+        }
+    });
+    // ------------ goto top end ------------ 
     // ********************** financial service section end **********************
 
 }
