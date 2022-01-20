@@ -75,6 +75,37 @@ if(page_check.className == "container home_page"){
     // ------------ goto top end ------------ 
     // ********************** financial service section end **********************
 
+    // **************** our solution section counting event start ****************
+    var hour_count = document.querySelector(".hour_count");
+    var review_count = document.querySelector(".review_count");
+    var project_count = document.querySelector(".project_count");
+    var award_count = document.querySelector(".award_count");
+
+    // counting no. event load only one time, when scroll reach the our solution section in index.html.
+    var executed = false;
+    window.onscroll = function(){
+        if(window.scrollY > 1700){
+            if(!executed){
+                countFunc(hour_count, 945, 1);
+                countFunc(review_count, 1280, 1);
+                countFunc(project_count, 578, 5);
+                countFunc(award_count, 26, 100);
+                executed = true;
+            }
+        }
+    }
+
+    function countFunc(count_name, count_no, interval){
+        var num = 0;
+        var inter = setInterval(count, interval);
+        function count(){
+            count_name.innerHTML = ++num;
+            if(num == count_no){
+                clearInterval(inter);
+            }
+        }
+    }
+    // ***************** our solution section counting event end *****************
 }
 
 // ============================================================================
