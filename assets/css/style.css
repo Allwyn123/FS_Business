@@ -198,12 +198,15 @@ li {
 /************************ MAIN CODE START *************************/
 /*================================================================*/
 
+/* common */
 @font-face {
   font-family: "localFontAwesome";
   src: url("../vendor/fonts/FontAwesome.otf") format("truetype");
 }
 
-.hide{ display: none; }
+.hide{ display: none !important; }
+
+/* common */
 
 /* --------------------- index page start ---------------- */
 .wrapper{
@@ -250,9 +253,15 @@ header .secondary_menu .wrapper{
   font-weight: 500;
 }
 
+.contact_menu a:hover{
+  background: #fff;
+  color: #a4c639;
+}
+
+.social_medias_menu{ display: flex; }
 .social_medias_menu li a{ font-size: 0; }
 
-.social_medias_menu li a::after{
+.social_medias_menu li a::before{
   content: '\f09a';
   padding: 15px 20px;
   border-left: 1px solid rgba(255, 255, 255, .4);
@@ -261,10 +270,15 @@ header .secondary_menu .wrapper{
   font-family: "localFontAwesome";
 }
 
-.social_medias_menu li:nth-child(1) a::after{ content: '\f09a'; }
-.social_medias_menu li:nth-child(2) a::after{ content: '\f099'; }
-.social_medias_menu li:nth-child(3) a::after{ content: '\f0e1'; }
-.social_medias_menu li:nth-child(4) a::after{ content: '\f1b4'; }
+.social_medias_menu li:nth-child(1) a::before{ content: '\f09a'; }
+.social_medias_menu li:nth-child(2) a::before{ content: '\f099'; }
+.social_medias_menu li:nth-child(3) a::before{ content: '\f0e1'; }
+.social_medias_menu li:nth-child(4) a::before{ content: '\f1b4'; }
+
+.social_medias_menu li a:hover::before{
+  background: #fff;
+  color: #a4c639;
+}
 /* secondary menu end */
 
 /* primary menu start */
@@ -291,7 +305,7 @@ header .primary_menu .wrapper{
 .main_menu li a:hover{ color: #a4c639;}
 
 .active_menu{
-  border-bottom: 2px solid #a4c639;
+  border-bottom: 2px solid #a4c639 !important;
   color: #a4c639 !important;
 }
 /* primary menu end */
