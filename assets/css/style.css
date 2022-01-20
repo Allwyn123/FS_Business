@@ -648,7 +648,7 @@ header .primary_menu .wrapper{
 }
 
 .info_content_box .suptext{ 
-  color: #666666;
+  color: #666;
   font-size: 15px;
   margin-bottom: 10px;
 }
@@ -663,7 +663,7 @@ header .primary_menu .wrapper{
 
 .info_content{
   margin-top: 40px;
-  color: #666666;
+  color: #666;
   line-height: 30px;
 }
 
@@ -684,5 +684,70 @@ header .primary_menu .wrapper{
   color: #a4c639;
 }
 /* more info section end */
+
+/* testimonial section start */
+.testimonial_section{
+  background: #f5f5f5;
+  padding: 140px 0;
+}
+
+.testimonial_section h5{
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.testimonial_section h5 span{ color: #a4c639; }
+
+.testimonial_section .subtext{
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+.testimonial_list{
+  margin: 80px 0 60px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial_list li{
+  padding: 44px;
+  border-radius: 8px;
+  flex-basis: 41%;
+  background: #fff;
+}
+
+.testimonial_list li:hover{
+  transform: scale(.98);
+  border: 1px solid #797979;
+}
+
+.testimonial_list li span{
+  display: block;
+  text-align: center;
+}
+
+.client_name{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.client_role{
+  margin: 8px 0;
+  color: #a4c639;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.testimonial_list li p{
+  color: #666;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* testimonial section end */
 
 /* --------------------- index page end ---------------- */
