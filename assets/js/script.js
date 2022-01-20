@@ -2,7 +2,23 @@
 // *********************** home/index page script start ***********************
 // ============================================================================
 
-// ************************ main section slider start ************************
+// ************************ header start ************************
+// ------------ fixed menu onscroll start ------------ 
+var primary_menu = document.querySelector(".primary_menu");
+
+window.addEventListener('scroll', function(){
+    if(window.scrollY > 80){
+        primary_menu.classList.add("fixed_menu");
+    }
+    else{
+        primary_menu.classList.remove("fixed_menu");
+    }
+});
+// ------------ fixed menu onscroll end ------------ 
+// ************************ header end ************************
+
+// ************************ main section start ************************
+// ------------ main slider end ------------ 
 $('.main_slider').slick({
     dots: false,
     infinite: true,
@@ -15,7 +31,8 @@ $('.main_slider').slick({
     prevArrow: $('.prev'),
     nextArrow: $('.next')
 });
-// ************************* main section slider end *************************
+// ------------ main slider end ------------ 
+// ************************* main section end *************************
 
 // ============================================================================
 // *********************** home/index page script start ***********************
