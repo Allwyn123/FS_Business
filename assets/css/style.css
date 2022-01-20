@@ -206,6 +206,8 @@ li {
 
 .hide{ display: none !important; }
 
+.display{ display: block !important; }
+
 /* common */
 
 /* --------------------- index page start ---------------- */
@@ -532,6 +534,19 @@ header .primary_menu .wrapper{
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 900;
+}
+
+.goto_top{
+  padding: 20px;
+  border: 2px solid #808080;
+  border-radius: 10px;
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  z-index: 10;
+  background: #232323;
+  color: #fff;
 }
 
 /* financial service section end */
