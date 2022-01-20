@@ -1002,6 +1002,23 @@ footer{ background: #232323; }
   color: #a4c639;
 }
 /* primary footer end */
+
+/* secondary footer start */
+.secondary_footer{ background: rgba(255, 255, 255, .1); }
+
+.secondary_footer p{
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.secondary_footer p a{ color: #a4c639; }
+
+.secondary_footer p a:hover{
+  color: #a4c639;
+  text-decoration: underline;
+}
+/* secondary footer end */
 /* footer end */
 
 /* --------------------- index page end ---------------- */
