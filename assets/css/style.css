@@ -853,4 +853,155 @@ header .primary_menu .wrapper{
 
 /* client section end */
 
+/* footer start */
+footer{ background: #232323; }
+
+/* primary footer start */
+.primary_footer .wrapper{
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary_footer .wrapper > div{
+  flex-basis: 23%;
+}
+
+.footer_company_name{
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.footer_aboutus p{
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.footer_aboutus .social_handles li a{ font-size: 0; }
+
+.footer_aboutus .social_handles li a::before{
+  content: "\f005";
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #232323;
+  font-size: 16px;
+  font-family: "localFontAwesome";
+}
+
+.footer_aboutus .social_handles li:nth-child(1) a::before{ content: '\f09a'; }
+.footer_aboutus .social_handles li:nth-child(2) a::before{ content: '\f099'; }
+.footer_aboutus .social_handles li:nth-child(3) a::before{ content: '\f0e1'; }
+.footer_aboutus .social_handles li:nth-child(4) a::before{ content: '\f1b4'; }
+
+.footer_aboutus .social_handles li a:hover::before{
+  background: transparent;
+  color: #a4c639;
+  border: 2px solid #a4c639;
+  transform: scale(1.1);
+}
+
+.useful_links_title{
+  margin-bottom: 40px;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.useful_link_list li{ display: block; }
+
+.useful_link_list li a{
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.useful_link_list li a:hover{
+  color: #a4c639;
+  text-decoration: underline;
+}
+
+.additional_pages_title{
+  margin-bottom: 40px;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.additional_pages_list li{ display: block; }
+
+.additional_pages_list li a{
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.additional_pages_list li a:hover{
+  color: #a4c639;
+  text-decoration: underline;
+}
+
+.footer_contactus .title{
+  margin-bottom: 40px;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.footer_contactus form .form_group{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_contactus .form_group span, .footer_contactus .submit_error_box{
+  display: none;
+  margin: 5px 0;
+  color: #f00;
+  font-size: 12px;
+}
+
+.footer_contactus .form_group input, .footer_contactus .message_input{
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .1);
+}
+
+.footer_contactus input::placeholder, .footer_contactus .message_input::placeholder{
+  color: #999;
+  font-family: sans-serif;
+}
+
+.footer_contactus .form_control .send_btn{
+  padding: 13px 28px;
+  margin-top: 10px;
+  border-radius: 40px;
+  position: relative;
+  color: #fff;
+  background: #a4c639;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.footer_contactus .form_control .send_btn:hover{
+  background: #fff;
+  color: #a4c639;
+}
+/* primary footer end */
+/* footer end */
+
 /* --------------------- index page end ---------------- */
