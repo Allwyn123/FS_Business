@@ -311,11 +311,12 @@ header .primary_menu .wrapper{
 }
 
 .fixed_menu{
+  border-bottom: 1px solid #444 !important;
   position: fixed !important;
+  z-index: 6 !important;
   top: 0 !important;
   background: #232323 !important;
-  z-index: 10 !important;
-  border-bottom: 1px solid #444 !important;
+  box-shadow: 2px 8px 35px -10px rgba(0, 0, 0, .5);
 }
 /* primary menu end */
 /* header end */
@@ -323,9 +324,9 @@ header .primary_menu .wrapper{
 /* main section start */
 .prev{
   position: absolute;
+  z-index: 2;
   top: 60%;
   left: 63px;
-  z-index: 2;
   color: #fff;
   font-size: 0;
 }
@@ -338,9 +339,9 @@ header .primary_menu .wrapper{
 
 .next{
   position: absolute;
+  z-index: 2;
   top: 60%;
   right: 63px;
-  z-index: 2;
   color: #fff;
   font-size: 0;
 }
@@ -352,11 +353,11 @@ header .primary_menu .wrapper{
 }
 
 .main_slider .bg_img img{
-  position: absolute;
   height: 100vh;
   width: 100vw;
-  object-fit: cover;
+  position: absolute;
   z-index: -1;
+  object-fit: cover;
 }
 
 .main_content{
@@ -513,9 +514,9 @@ header .primary_menu .wrapper{
   width: 100%;
   height: 100%;
   position: fixed;
+  z-index: 10;
   top: 50%;
   left: 50%;
-  z-index: 3;
   background: rgba(0, 0, 0, .5);
   font-size: 0;
   transform: translate(-50%,-50%);
@@ -529,9 +530,9 @@ header .primary_menu .wrapper{
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 4;
   top: 50%;
   left: 50%;
-  z-index: 4;
   background: #fff;
   line-height: 30px;
   transform: translate(-50%,-50%);
@@ -549,9 +550,9 @@ header .primary_menu .wrapper{
   border-radius: 10px;
   display: none;
   position: fixed;
-  right: 30px;
+  z-index: 5;
+  right: 5%;
   bottom: 60px;
-  z-index: 10;
   background: #232323;
   color: #fff;
 }
