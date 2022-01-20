@@ -648,7 +648,7 @@ header .primary_menu .wrapper{
 }
 
 .info_content_box .suptext{ 
-  color: #666666;
+  color: #666;
   font-size: 15px;
   margin-bottom: 10px;
 }
@@ -663,7 +663,7 @@ header .primary_menu .wrapper{
 
 .info_content{
   margin-top: 40px;
-  color: #666666;
+  color: #666;
   line-height: 30px;
 }
 
@@ -684,5 +684,173 @@ header .primary_menu .wrapper{
   color: #a4c639;
 }
 /* more info section end */
+
+/* testimonial section start */
+.testimonial_section{
+  background: #f5f5f5;
+  padding: 140px 0;
+}
+
+.testimonial_section h5{
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.testimonial_section h5 span{ color: #a4c639; }
+
+.testimonial_section .subtext{
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+.testimonial_list{
+  margin: 80px 0 60px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial_list li{
+  padding: 44px;
+  border-radius: 8px;
+  flex-basis: 41%;
+  background: #fff;
+}
+
+.testimonial_list li:hover{
+  transform: scale(.98);
+  border: 1px solid #797979;
+}
+
+.testimonial_list li span{
+  display: block;
+  text-align: center;
+}
+
+.client_name{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.client_role{
+  margin: 8px 0;
+  color: #a4c639;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.testimonial_list li p{
+  color: #666;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* testimonial section end */
+
+/* contact us section start */
+.contactus_section{ margin: 140px 0; }
+
+.contactus_section h6{
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.contactus_section h6 span{ color: #a4c639; }
+
+.contactus_section .subtext{
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contactus_section form{
+  margin-top: 80px;
+  padding: 60px;
+  border-radius: 5px;
+  background: #a4c639;
+}
+
+.contactus_section .form_group span, 
+.contactus_section .form_control span{
+  margin: 10px 0;
+  display: none;
+  color: #f00;
+  font-size: 12px;
+  text-align: center;
+}
+
+.contactus_section form div:first-child{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactus_section div:first-child .form_group{
+  display:  flex;
+  flex-direction: column;
+  flex-basis: 31%;
+}
+
+.contactus_section .form_group input{
+  padding: 12px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 13px;
+  flex-basis: 50%;
+}
+
+.contactus_section .message_box{
+  padding: 20px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 20px;
+}
+
+.contactus_section form input::placeholder, .contactus_section .message_box::placeholder{
+  color: #acacac;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.contactus_section .form_control .send_btn{
+  padding: 13px 28px;
+  margin-top: 40px;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  position: relative;
+  left: 50%;
+  color: #fff;
+  background: #a4c639;
+  font-size: 13px;
+  font-weight: 900;
+  transform: translateX(-50%);
+}
+
+.contactus_section .form_control .send_btn:hover{
+  border: 2px solid #a4c639;
+  background: #fff;
+  color: #a4c639;
+}
+/* contact us section end */
+
+/* client section start */
+.client_section{ 
+  padding: 60px;
+  background: #f5f5f5;
+}
+
+.client_list{
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.client_list li:hover{ transform: scale(.9); }
+
+/* client section end */
 
 /* --------------------- index page end ---------------- */
