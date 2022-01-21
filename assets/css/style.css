@@ -227,10 +227,14 @@ header .secondary_menu{ background: #a4c639; }
 header .secondary_menu .wrapper{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.contact_menu{ display: flex; }
+.contact_menu{ 
+  display: flex;
+  justify-content: space-between;
+}
 
 .contact_menu > *{
   padding: 15px 20px;
@@ -261,6 +265,7 @@ header .secondary_menu .wrapper{
 .contact_menu a:hover{
   background: #fff;
   color: #a4c639;
+  text-decoration: underline;
 }
 
 .social_medias_menu{ display: flex; }
@@ -280,6 +285,8 @@ header .secondary_menu .wrapper{
 .social_medias_menu li:nth-child(3) a::before{ content: '\f0e1'; }
 .social_medias_menu li:nth-child(4) a::before{ content: '\f1b4'; }
 
+.social_medias_menu li:last-child a::before{ border-right: 1px solid rgba(255, 255, 255, .4); }
+
 .social_medias_menu li a:hover::before{
   background: #fff;
   color: #a4c639;
@@ -290,7 +297,7 @@ header .secondary_menu .wrapper{
 header .primary_menu{
   width: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 header .primary_menu .wrapper{
@@ -430,6 +437,8 @@ header .primary_menu .wrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   line-height: 35px;
 }
 
