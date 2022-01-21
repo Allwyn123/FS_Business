@@ -1203,6 +1203,11 @@ footer{ background: #232323; }
   .service_content_box{
     padding: 18px;
   }
+
+  .contactus_section form div:first-child{
+    gap: 30px;
+    flex-direction: column;
+  }
 }
 /* media query for 995px viewport end */
 
