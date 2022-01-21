@@ -1,22 +1,9 @@
 // ============================================================================
 // *********************** home/index page script start ***********************
 // ============================================================================
-
-page_check = document.querySelector("body > div");
+var page_check = document.querySelector("body > div");
 
 if(page_check.className == "container home_page"){
-    // ************************ header fixed menu onscroll start ************************
-    var primary_menu = document.querySelector(".primary_menu");
-
-    window.addEventListener('scroll', function(){
-        if(window.scrollY > 80){
-            primary_menu.classList.add("fixed_menu");
-        }
-        else{
-            primary_menu.classList.remove("fixed_menu");
-        }
-    });
-    // ************************ header fixed menu onscroll end ************************
 
     // ************************ main section slider start ************************
     $('.main_slider').slick({
@@ -32,20 +19,20 @@ if(page_check.className == "container home_page"){
         nextArrow: $('.next')
     });
     // ************************* main section slider end *************************
-    
+
     // ********************* financial service section start *********************
     // ------------ modal start ------------ 
     var modal = document.querySelectorAll(".modal");
     var overlay = document.querySelectorAll(".overlay");
     var read_more_btn = document.querySelectorAll(".read_more_btn");
     var service_content_box = document.querySelector("body");
-    
+
     read_more_btn.forEach(function(e){
         var index = Array.prototype.indexOf.call(read_more_btn, e);
         e.addEventListener("click", function(){
             window.scrollY = 1040;
             modal[index].classList.remove("hide");
-    
+
             var x=window.scrollX;
             var y=window.scrollY;
             window.onscroll = function(){ window.scrollTo(x, y); };
@@ -58,19 +45,6 @@ if(page_check.className == "container home_page"){
     });
 
     // ------------ modal end ------------ 
-
-    // ------------ goto top start ------------ 
-    var goto_top = document.querySelector(".goto_top");
-
-    window.addEventListener('scroll', function(){
-        if(window.scrollY > 600){
-            goto_top.classList.add("display");
-        }
-        else{
-            goto_top.classList.remove("display");
-        }
-    });
-    // ------------ goto top end ------------ 
     // ********************** financial service section end **********************
 
     // **************** our solution section counting event start ****************
@@ -104,6 +78,37 @@ if(page_check.className == "container home_page"){
         }
     }
     // ***************** our solution section counting event end *****************
+}
+
+if(page_check.className == "container home_page" || page_check.className == "container service_page"){
+
+    // ************************ header fixed menu onscroll start ************************
+    var primary_menu = document.querySelector(".primary_menu");
+
+    window.addEventListener('scroll', function(){
+        if(window.scrollY > 80){
+            primary_menu.classList.add("fixed_menu");
+        }
+        else{
+            primary_menu.classList.remove("fixed_menu");
+        }
+    });
+    // ************************ header fixed menu onscroll end ************************
+    
+    // ********************* financial service section start *********************
+    // ------------ goto top start ------------ 
+    var goto_top = document.querySelector(".goto_top");
+
+    window.addEventListener('scroll', function(){
+        if(window.scrollY > 550){
+            goto_top.classList.add("display");
+        }
+        else{
+            goto_top.classList.remove("display");
+        }
+    });
+    // ------------ goto top end ------------ 
+    // ********************** financial service section end **********************
 
     // ***************************** contact us form start *****************************
 
