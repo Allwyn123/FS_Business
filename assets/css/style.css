@@ -1088,4 +1088,60 @@ footer{ background: #232323; }
 
 /* heading panel section end */
 
+/* service tab section start */
+.service_tab_section .wrapper{ 
+  padding: 140px 0;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.service_tab_list{
+  flex-basis: 32%;
+}
+
+.service_tab_list li{
+  margin-bottom: 10px;
+  display: flex;
+  position: relative;
+  font-size: 20px;
+  font-weight: 900;
+  background: #a4c639;
+}
+
+.service_tab_list li a{
+  width: 100%;
+  padding: 35px 25px;
+  color: #121212;
+}
+
+.service_tab_list li a:hover{ color: #fff; }
+
+.service_tab_list li a::after{
+  content: "\f105";
+  position: absolute;
+  right: 30px;
+  font-family: "localFontAwesome";
+  font-weight: 500;
+}
+
+.tab_content_list{ flex-basis: 63%; }
+.tab_content_list li{ display: none; }
+
+.tab_content_list li h3{
+  margin: 25px 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.tab_content_list li p{
+  color: #707070;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.active_tab{ color: #fff !important; }
+
+/* service tab section end */
+
 /* --------------------- service page end ---------------- */
