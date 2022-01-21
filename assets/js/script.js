@@ -310,5 +310,84 @@ if(page_check.className == "container home_page" || page_check.className == "con
 }
 
 // ============================================================================
-// *********************** home/index page script start ***********************
+// ************************ home/index page script end ************************
+// ============================================================================
+
+
+// ============================================================================
+// ************************* service page script start ************************
+// ============================================================================
+
+if(page_check.className == "container service_page"){
+    // ************************ tab function start ************************
+    var market_analysis_tab = document.querySelector(".market_analysis_tab");
+    var financial_data_tab = document.querySelector(".financial_data_tab");
+    var accounting_service_tab = document.querySelector(".accounting_service_tab");
+    var overall_evaluation_tab = document.querySelector(".overall_evaluation_tab");
+    var tab_content_list_li = document.querySelectorAll(".tab_content_list li");
+    var service_tab_list_link = document.querySelectorAll(".service_tab_list li a");
+
+    function tab_remove(){
+        service_tab_list_link.forEach(function(e){
+            e.classList.remove("active_tab");
+        });
+    }
+
+    // market analysis tab event
+    market_analysis_tab.addEventListener('click', function() {
+        tab_remove();
+        market_analysis_tab.classList.add("active_tab");
+
+        tab_content_list_li.forEach(function(e) {
+            e.classList.remove("display");
+            if(e.dataset.tab == "market_analysis"){
+                e.classList.add("display");
+            }
+        });
+    });
+
+    // financial data tab event
+    financial_data_tab.addEventListener('click', function() {
+        tab_remove();
+        financial_data_tab.classList.add("active_tab");
+
+        tab_content_list_li.forEach(function(e) {
+            e.classList.remove("display");
+            if(e.dataset.tab == "financial_data"){
+                e.classList.add("display");
+            }
+        });
+    });
+
+    // accounting service tab event
+    accounting_service_tab.addEventListener('click', function() {
+        tab_remove();
+        accounting_service_tab.classList.add("active_tab");
+
+        tab_content_list_li.forEach(function(e) {
+            e.classList.remove("display");
+            if(e.dataset.tab == "accounting_service"){
+                e.classList.add("display");
+            }
+        });
+    });
+
+    // overall_evaluation tab event
+    overall_evaluation_tab.addEventListener('click', function() {
+        tab_remove();
+        overall_evaluation_tab.classList.add("active_tab");
+
+        tab_content_list_li.forEach(function(e) {
+            e.classList.remove("display");
+            if(e.dataset.tab == "overall_evaluation"){
+                e.classList.add("display");
+            }
+        });
+    });
+
+    // ************************* tab function end *************************
+}
+
+// ============================================================================
+// ************************** service page script end *************************
 // ============================================================================
