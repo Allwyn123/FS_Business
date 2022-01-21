@@ -1208,6 +1208,10 @@ footer{ background: #232323; }
     gap: 30px;
     flex-direction: column;
   }
+
+  .client_list{
+    justify-content: space-evenly;
+  }
 }
 /* media query for 995px viewport end */
 
