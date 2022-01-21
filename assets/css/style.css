@@ -893,6 +893,8 @@ header .primary_menu .wrapper{
 /* contact us section end */
 
 /* client section start */
+.client_section .wrapper h6{ display: none; }
+
 .client_section{ 
   padding: 60px;
   background: #f5f5f5;
