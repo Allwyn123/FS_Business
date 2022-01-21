@@ -1166,9 +1166,7 @@ footer{ background: #232323; }
 
 /* media query for 1280px viewport start */
 @media screen and (max-width: 1280px) {
-  .main_content h2{
-    width: 64%;
-  }
+  .main_content h2{ width: 64%; }
 }
 /* media query for 1280px viewport end */
 
@@ -1179,48 +1177,40 @@ footer{ background: #232323; }
     font-size: 42px;
   }
 
-  .main_menu li a{
-    margin: 0 12px;
-  }
+  .main_menu li a{ margin: 0 12px; }
 
   .info_section .wrapper{
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .info_content_box{
-    flex-basis: auto;
     padding: 30px;
+    flex-basis: auto;
   }
 }
 /* media query for 1024px viewport end */
 
 /* media query for 995px viewport start */
 @media screen and (max-width: 995px) {
-  .main_menu li a{
-    margin: 5px 0;
-  }
-
-  .service_content_box{
-    padding: 18px;
-  }
+  .main_menu li a{ margin: 5px 0; } 
+  .service_content_box{ padding: 18px; }
 
   .contactus_section form div:first-child{
-    gap: 30px;
     flex-direction: column;
+    gap: 30px;
   }
 
-  .client_list{
-    justify-content: space-evenly;
-  }
+  .client_list{ justify-content: space-evenly; } 
+  .primary_footer .wrapper > div{ flex-basis: 33%; }
 }
 /* media query for 995px viewport end */
 
 /* media query for 768px viewport start */
 @media screen and (max-width: 768px) {
-  
   .contact_menu a,.contact_menu p{ 
-    font-size: 14px; 
     width: auto;
+    font-size: 14px; 
   }
   
   .contact_menu > *{ padding: 5px 8px; }
@@ -1292,6 +1282,7 @@ footer{ background: #232323; }
   }
 
   .testimonial_list li { flex-basis: 60%; }
+  .primary_footer .wrapper > div{ flex-basis: 45%; }
 }
 /* media query for 768px viewport end */
 
@@ -1309,8 +1300,8 @@ footer{ background: #232323; }
   .digital_modal, .market_modal, .historical_modal{
     padding: 20px 15px;
     display: block;
-    line-height: initial;
     font-size: 14px;
+    line-height: initial;
   }
   
   .digital_modal h3, .market_modal h3, .historical_modal h3{
@@ -1319,8 +1310,8 @@ footer{ background: #232323; }
   }
 
   .solution_counter{
-    gap: 25px;
     justify-content: center;
+    gap: 25px;
   }
 
   .solution_section .wrapper{
@@ -1328,13 +1319,20 @@ footer{ background: #232323; }
     gap: 40px;
   }
   .solution_section div:first-child{ flex-basis: 80%; }
+
   .solution_section .wrapper div:last-child{
-    flex-basis: 100%;
     margin: auto;
+    flex-basis: 100%;
   }
+
   .solution_counter li{ flex-basis: 40%; }
-  .info_content_box h4{
-    font-size: 30px;
+  .info_content_box h4{ font-size: 30px; }
+  .primary_footer .wrapper{ justify-content: center; }
+
+  .primary_footer .wrapper > div{
+    flex-basis: 80%;
+    gap: 20px;
+    text-align: center;
   }
 }
 /* media query for 540px viewport end */
