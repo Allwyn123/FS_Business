@@ -1182,6 +1182,15 @@ footer{ background: #232323; }
   .main_menu li a{
     margin: 0 12px;
   }
+
+  .info_section .wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info_content_box{
+    flex-basis: auto;
+    padding: 30px;
+  }
 }
 /* media query for 1024px viewport end */
 
@@ -1307,6 +1316,9 @@ footer{ background: #232323; }
     margin: auto;
   }
   .solution_counter li{ flex-basis: 40%; }
+  .info_content_box h4{
+    font-size: 30px;
+  }
 }
 /* media query for 540px viewport end */
 
