@@ -1174,13 +1174,13 @@ footer{ background: #232323; }
 
 /* media query for 1024px viewport start */
 @media screen and (max-width: 1024px) {
-  .main_menu li a{
-    margin: 0 12px;
-  }
-  
   .main_content h2{
     width: 80%;
     font-size: 42px;
+  }
+
+  .main_menu li a{
+    margin: 0 12px;
   }
 }
 /* media query for 1024px viewport end */
@@ -1189,6 +1189,10 @@ footer{ background: #232323; }
 @media screen and (max-width: 995px) {
   .main_menu li a{
     margin: 5px 0;
+  }
+
+  .service_content_box{
+    padding: 18px;
   }
 }
 /* media query for 995px viewport end */
@@ -1239,6 +1243,14 @@ footer{ background: #232323; }
   }
 
   .main_content .main_para{ width: fit-content; }
+  .fin_service_list{ flex-wrap: wrap; }
+
+  .fin_service_list li{
+    margin-top: 30px;
+    flex-basis: 48%;
+  }
+
+  .service_content_box{ padding: 20px; }
 }
 /* media query for 768px viewport end */
 
@@ -1247,6 +1259,23 @@ footer{ background: #232323; }
   .main_content .sup_title{ font-size: 18px; }
   .main_content h2{ font-size: 26px; }
   .prev, .next{ top: 100%; }
+
+  .fin_service_list li{
+    margin: 30px auto;
+    flex-basis: 80%;
+  }
+
+  .digital_modal, .market_modal, .historical_modal{
+    padding: 20px 15px;
+    display: block;
+    line-height: initial;
+    font-size: 14px;
+  }
+  
+  .digital_modal h3, .market_modal h3, .historical_modal h3{
+    font-size: 20px;
+    text-align: center;
+  }
 }
 /* media query for 540px viewport end */
 
@@ -1254,6 +1283,9 @@ footer{ background: #232323; }
 @media screen and (max-width: 425px) {
   .main_content h2{ font-size: 23px; } 
   .prev, .next{ display: none; }
+
+  .fin_service_section h2{ font-size: 28px; } 
+  .fin_service_section .subtext { font-size: 13px; }
 }
 /* media query for 425px viewport end */
 
