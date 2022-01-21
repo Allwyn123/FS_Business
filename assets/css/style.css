@@ -748,6 +748,7 @@ header .primary_menu .wrapper{
 .testimonial_list{
   margin: 80px 0 60px 0;
   display: flex;
+  gap: 50px;
   justify-content: space-between;
 }
 
@@ -892,6 +893,8 @@ header .primary_menu .wrapper{
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .client_list li:hover{ transform: scale(.9); }
@@ -905,6 +908,8 @@ footer{ background: #232323; }
 .primary_footer .wrapper{
   padding: 80px 0;
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
   justify-content: space-between;
 }
 
