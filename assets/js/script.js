@@ -16,7 +16,15 @@ if(page_check.className == "container home_page"){
         autoplaySpeed: 2000,
         arrows: true,
         prevArrow: $('.prev'),
-        nextArrow: $('.next')
+        nextArrow: $('.next'),
+        responsive: [
+            {
+              breakpoint: 426,
+              settings: {
+                arrows: false
+              }
+            }
+        ]
     });
     // ************************* main section slider end *************************
 
@@ -270,17 +278,6 @@ if(page_check.className == "container home_page" || page_check.className == "con
             email_error_box.classList.remove("display");
             email_input.classList.remove("error_box");
         }
-
-        // if(subject_box.value == ""){
-        //     subject_error_display.innerHTML = "Please Enter Subject";
-        //     subject_error_display.classList.add("display");
-        //     subject_box.classList.add("error_box");
-        //     error = true;
-        // }
-        // else{
-        //     subject_error_display.classList.remove("display");
-        //     subject_box.classList.remove("error_box");
-        // }
 
         if(message_input.value == ""){
             message_error_box.innerHTML = "Enter Your Message";
