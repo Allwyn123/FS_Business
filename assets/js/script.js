@@ -81,7 +81,19 @@ if(page_check.className == "container home_page"){
 }
 
 if(page_check.className == "container home_page" || page_check.className == "container service_page"){
+    // ***************************** mobile menu view start *****************************
+    var menu_icon = document.querySelector(".menu_icon");
+    var nav = document.querySelector(".primary_menu nav");
+    var secondary_menu = document.querySelector(".secondary_menu");
 
+    menu_icon.addEventListener("click", function(){
+        nav.classList.toggle("display");
+        secondary_menu.classList.toggle("hide");
+        var body = document.querySelector("body");
+        body.classList.toggle("no_scroll");
+    });
+    // ***************************** mobile menu view end *****************************
+    
     // ************************ header fixed menu onscroll start ************************
     var primary_menu = document.querySelector(".primary_menu");
 
