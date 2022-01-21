@@ -227,7 +227,7 @@ header .secondary_menu{ background: #a4c639; }
 header .secondary_menu .wrapper{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -859,7 +859,7 @@ header .primary_menu .wrapper{
 }
 
 .contactus_section form input::placeholder, .contactus_section .message_box::placeholder{
-  color: #acacac;
+  color: #808080;
   font-family: sans-serif;
   font-size: 14px;
 }
@@ -893,6 +893,8 @@ header .primary_menu .wrapper{
 /* contact us section end */
 
 /* client section start */
+.client_section .wrapper h6{ display: none; }
+
 .client_section{ 
   padding: 60px;
   background: #f5f5f5;
@@ -1178,13 +1180,13 @@ footer{ background: #232323; }
 
 /* Responsive code start */
 
-/* media query for 1280px viewport start */
+/*===== media query for 1280px viewport start =====*/
 @media screen and (max-width: 1280px) {
   .main_content h2{ width: 64%; }
 }
-/* media query for 1280px viewport end */
+/*===== media query for 1280px viewport end =====*/
 
-/* media query for 1024px viewport start */
+/*===== media query for 1024px viewport start =====*/
 @media screen and (max-width: 1024px) {
   .main_content h2{
     width: 80%;
@@ -1203,14 +1205,14 @@ footer{ background: #232323; }
     flex-basis: auto;
   }
 }
-/* media query for 1024px viewport end */
+/*===== media query for 1024px viewport end =====*/
 
-/* media query for 995px viewport start */
+/*===== media query for 995px viewport start =====*/
 @media screen and (max-width: 995px) {
   .main_menu li a{ margin: 5px 0; } 
   .service_content_box{ padding: 18px; }
 
-  .contactus_section form div:first-child{
+  .contactus_section form > div{
     flex-direction: column;
     gap: 30px;
   }
@@ -1218,13 +1220,15 @@ footer{ background: #232323; }
   .client_list{ justify-content: space-evenly; } 
   .primary_footer .wrapper > div{ flex-basis: 33%; }
 }
-/* media query for 995px viewport end */
+/*===== media query for 995px viewport end =====*/
 
-/* media query for 768px viewport start */
+/*===== media query for 768px viewport start =====*/
 @media screen and (max-width: 768px) {
+  header .secondary_menu .wrapper{ justify-content: space-evenly; }
+
   .contact_menu a,.contact_menu p{ 
     width: auto;
-    font-size: 14px; 
+    font-size: 12px; 
   }
   
   .contact_menu > *{ padding: 5px 8px; }
@@ -1240,7 +1244,7 @@ footer{ background: #232323; }
     flex-wrap: wrap;
   }
 
-  header .primary_menu h1{ width: 50%; }
+  header .primary_menu h1{ width: 170px; }
   .menu_icon{ display: block; }
   
   header .primary_menu nav{
@@ -1277,6 +1281,7 @@ footer{ background: #232323; }
   .solution_section .wrapper{
     flex-wrap: wrap;
     gap: 40px;
+    justify-content: center;
   }
 
   .solution_section div:first-child{ flex-basis: 80%; }
@@ -1297,10 +1302,29 @@ footer{ background: #232323; }
 
   .testimonial_list li { flex-basis: 60%; }
   .primary_footer .wrapper > div{ flex-basis: 45%; }
-}
-/* media query for 768px viewport end */
 
-/* media query for 540px viewport start */
+  /* ----- service page start ----- */
+  .service_tab_list{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .service_tab_section .wrapper{ display: block;}
+  .service_tab_list li{ flex-basis: 24%; }
+
+  .service_tab_list li a{ 
+    padding: 20px 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .service_tab_list li a::after{content: "";}
+  .tab_content_list{ margin-top: 30px; }
+  /* ----- service page end ----- */
+}
+/*===== media query for 768px viewport end =====*/
+
+/* ===== media query for 540px viewport start ===== */
 @media screen and (max-width: 540px) {
   .main_content .sup_title{ font-size: 18px; }
   .main_content h2{ font-size: 26px; }
@@ -1348,10 +1372,15 @@ footer{ background: #232323; }
     gap: 20px;
     text-align: center;
   }
-}
-/* media query for 540px viewport end */
 
-/* media query for 425px viewport start */
+  /* ----- service page start ----- */
+  .service_tab_list li{ flex-basis: 49%; }
+  .tab_content_list li p{ font-size: 12px; }
+  /* ----- service page end ----- */
+}
+/*===== media query for 540px viewport end =====*/
+
+/*===== media query for 425px viewport start =====*/
 @media screen and (max-width: 425px) {
   .main_content h2{ font-size: 23px; } 
   .prev, .next{ display: none; }
@@ -1360,7 +1389,12 @@ footer{ background: #232323; }
   .fin_service_section .subtext { font-size: 13px; }
   .solution_counter { gap: 18px; }
   .solution_counter li span:last-child { font-size: 16px; }
+
+  /* ----- service page star ----- */
+  .service_tab_section{padding-bottom: 20px;}
+  .contactus_section form{ padding: 40px 20px; }
+  /* ----- service page end ----- */
 }
-/* media query for 425px viewport end */
+/*===== media query for 425px viewport end =====*/
 
 /* Responsive code end */
