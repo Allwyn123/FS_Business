@@ -227,7 +227,7 @@ header .secondary_menu{ background: #a4c639; }
 header .secondary_menu .wrapper{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -1222,9 +1222,11 @@ footer{ background: #232323; }
 
 /* media query for 768px viewport start */
 @media screen and (max-width: 768px) {
+  header .secondary_menu .wrapper{ justify-content: space-evenly; }
+
   .contact_menu a,.contact_menu p{ 
     width: auto;
-    font-size: 14px; 
+    font-size: 12px; 
   }
   
   .contact_menu > *{ padding: 5px 8px; }
