@@ -207,6 +207,10 @@ li {
 .hide{ display: none !important; }
 .display{ display: block !important; }
 
+.no_scroll{
+  height: 100vh;
+  overflow-y: hidden;
+}
 /* common */
 
 /* --------------------- index page start ---------------- */
@@ -294,6 +298,18 @@ header .primary_menu .wrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.menu_icon{
+  display: none;
+  font-size: 0;
+}
+
+.menu_icon::before{
+  content: "\f0c9";
+  color: #fff;
+  font-size: 24px;
+  font-family: "localFontAwesome";
 }
 
 .main_menu li a{
