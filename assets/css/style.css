@@ -1275,6 +1275,14 @@ footer{ background: #232323; }
 
   .solution_counter{ justify-content: center; }
   .solution_counter li{ flex-basis: 33%; }
+
+  .testimonial_list{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .testimonial_list li { flex-basis: 60%; }
 }
 /* media query for 768px viewport end */
 
