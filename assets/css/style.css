@@ -1051,3 +1051,41 @@ footer{ background: #232323; }
 /* footer end */
 
 /* --------------------- index page end ---------------- */
+
+/* -------------------- service page start ---------------- */
+
+/* heading panel section start */
+.heading_panel_section{
+  height: 100%;
+  position: relative;
+}
+
+.heading_panel_section figure img{
+  height: 70vh;
+  object-fit: cover;
+}
+
+.heading_panel_section .wrapper{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading_panel_section .wrapper h2{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.heading_panel_section .subtext{
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* heading panel section end */
+
+/* --------------------- service page end ---------------- */
