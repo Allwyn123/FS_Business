@@ -1165,13 +1165,22 @@ footer{ background: #232323; }
 /* Responsive code start */
 
 /* media query for 1280px viewport start */
-@media screen and (max-width: 1280px) { }
+@media screen and (max-width: 1280px) {
+  .main_content h2{
+    width: 64%;
+  }
+}
 /* media query for 1280px viewport end */
 
 /* media query for 1024px viewport start */
 @media screen and (max-width: 1024px) {
   .main_menu li a{
     margin: 0 12px;
+  }
+  
+  .main_content h2{
+    width: 80%;
+    font-size: 42px;
   }
 }
 /* media query for 1024px viewport end */
@@ -1186,6 +1195,7 @@ footer{ background: #232323; }
 
 /* media query for 768px viewport start */
 @media screen and (max-width: 768px) {
+  
   .contact_menu a,.contact_menu p{ 
     font-size: 14px; 
     width: auto;
@@ -1222,15 +1232,29 @@ footer{ background: #232323; }
   }
 
   .main_menu li{ text-align: center; }
+  
+  .main_content h2{
+    width: 100%;
+    font-size: 34px;
+  }
+
+  .main_content .main_para{ width: fit-content; }
 }
 /* media query for 768px viewport end */
 
 /* media query for 540px viewport start */
-@media screen and (max-width: 540px) { }
+@media screen and (max-width: 540px) {
+  .main_content .sup_title{ font-size: 18px; }
+  .main_content h2{ font-size: 26px; }
+  .prev, .next{ top: 100%; }
+}
 /* media query for 540px viewport end */
 
 /* media query for 425px viewport start */
-@media screen and (max-width: 425px) { }
+@media screen and (max-width: 425px) {
+  .main_content h2{ font-size: 23px; } 
+  .prev, .next{ display: none; }
+}
 /* media query for 425px viewport end */
 
 /* Responsive code end */
